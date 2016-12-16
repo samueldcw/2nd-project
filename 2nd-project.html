@@ -1,12 +1,16 @@
-<body/>
+<body>
 <svg width="300" height="500">
 <rect x= "100" y= "189" width= "300" height= "400" fill= "gray"/>
 <svg width="300" height="200">
-  <line x1="100" y1="100" x2="300" y2="150" stroke="gray" stroke-width="8"/>
-<image x="25" y="200" width="325" height="150" xlink:href= "http://www.clipartbest.com/cliparts/4Tb/o76/4Tbo76M7c.svg"/>
+  <line x1="100" y1="100" x2="300" y2="101" stroke="gray" stroke-width="8"/>
+  <animate id="closeLid" attributeName= "y" from= "0" to= "100" dur="2"begin="trash.end"/>
+  <animate id="closeLid2" attributeName= "y" from= "0" to= "150" dur="2"begin="trash.end"/>
+</line>
 </svg>
 <svg width="300" height="200">
-  <circle cx="125" cy="130" r="15" fill="orange"/>
-  <animate attributeName=y from=130 to=400 dur="5">
+  <circle cx="140" cy="130" r="15" fill="blue" opacity= ".25"/>
+  <animate id="trash" attributeName="y" from="70" to="400" dur="5s" repeatCount="1" begin="click"/>
+  <animate id="trash2" attributeName="oppacity" from=".55" to="0" dur="3s" repeatCount="1" begin="trash.end"/>
 </circle>
 </svg>
+<img x="25" y="200" width="325" height="150" src= "http://www.clipartbest.com/cliparts/4Tb/o76/4Tbo76M7c.svg"  x="50" y="150" width="325" height="150">
